@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ygsRelative"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ygs_transparent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="21dp"
+        android:src="@drawable/app_icon" />
+
+    <TextView
+        android:id="@+id/tvGun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="-35dp"
+        android:text="Gün"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginRight="24dp"
+        android:text="YGS&apos;ye"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+</RelativeLayout>

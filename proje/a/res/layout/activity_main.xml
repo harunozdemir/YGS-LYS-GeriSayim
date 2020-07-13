@@ -1,0 +1,197 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="225dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#E00B0B" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="YGS için kalan zaman"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvGun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="27dp" />
+
+            <TextView
+                android:id="@+id/tvSaat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvGun"
+                android:layout_below="@+id/tvGun"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="27dp" />
+
+            <TextView
+                android:id="@+id/tvDakika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvSaat"
+                android:layout_below="@+id/tvSaat"
+                android:layout_marginLeft="-5dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="27dp" />
+
+            <TextView
+                android:id="@+id/tvSaniye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvDakika"
+                android:layout_below="@+id/tvDakika"
+                android:layout_marginLeft="-28dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="27dp" />
+
+            <TextView
+                android:id="@+id/tvTarihYgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Tarih: 20 Mart 2016 - Pazar --  Saat: 10:00"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#16E00B"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="225dp"
+            android:background="#117AD6" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:text="LYS için kalan zaman"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvLysGun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_centerHorizontal="true"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="27dp" />
+
+            <TextView
+                android:id="@+id/tvLysSaat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvLysGun"
+                android:layout_below="@+id/tvLysGun"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="27dp" />
+
+            <TextView
+                android:id="@+id/tvLysDakika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvLysSaat"
+                android:layout_below="@+id/tvLysSaat"
+                android:layout_marginLeft="-5dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="27dp" />
+
+            <TextView
+                android:id="@+id/tvLysSaniye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvLysDakika"
+                android:layout_below="@+id/tvLysDakika"
+                android:layout_marginLeft="-28dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="27dp" />
+
+            <TextView
+                android:id="@+id/tvTarihLys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLysSaniye"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="Tarih: 13 - 21 Haziran 2015 -- Saat: 10:00"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#16E00B"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/basarilar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTarihLys"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="ALLAH zihin açıklığı versin :)"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

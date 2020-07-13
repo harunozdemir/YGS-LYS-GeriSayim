@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.time.ygslys_gerisayim"
+    android:versionCode="7"
+    android:versionName="1.7 [2016 YGS-LYS]" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".widgetYgs"
+            android:label="YGS gün-saat" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.time.ygslys_gerisayim.8BITCLOCK_WIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/ygs_provider" />
+        </receiver>
+        <receiver
+            android:name=".widgetYgsTransparent"
+            android:label="YGS gün" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.time.ygslys_gerisayim.8BITCLOCK_WIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/ygs_transparent_provider" />
+        </receiver>
+        <receiver
+            android:name=".widgetLys"
+            android:label="LYS gün-saat" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.time.ygslys_gerisayim.8BITCLOCK_WIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/lys_provider" />
+        </receiver>
+        <receiver
+            android:name=".widgetLysTransparent"
+            android:label="LYS gün" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.time.ygslys_gerisayim.8BITCLOCK_WIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/lys_transparent_provider" />
+        </receiver>
+    </application>
+
+</manifest>
